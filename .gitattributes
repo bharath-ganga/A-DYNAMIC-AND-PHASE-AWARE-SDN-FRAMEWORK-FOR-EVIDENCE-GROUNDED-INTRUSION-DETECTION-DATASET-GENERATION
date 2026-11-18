@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# Preserve supplied research exports and binary media byte-for-byte.
+dist/evidence/** -text
+*.pdf -text
+*.mp4 -text
+*.png -text
+*.jpg -text
+*.zip -text
