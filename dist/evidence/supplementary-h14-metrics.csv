@@ -1,0 +1,11 @@
+Model,Dataset,Balanced Accuracy,Recall,FPR,Precision,F1,TP,FP,TN,FN
+Logistic Regression,H14 Validation (new code),0.8833333333333333,0.9166666666666666,0.15,0.55,0.6875,11,9,51,1
+Logistic Regression,H14 Test (new code),0.825,0.75,0.1,0.6,0.6666666666666666,9,6,54,3
+Random Forest,H14 Validation (new code),1.0,1.0,0.0,1.0,1.0,12,0,60,0
+Random Forest,H14 Test (new code),1.0,1.0,0.0,1.0,1.0,12,0,60,0
+RBF-SVM,H14 Validation (new code),0.8,0.9166666666666666,0.31666666666666665,0.36666666666666664,0.5238095238095238,11,19,41,1
+RBF-SVM,H14 Test (new code),0.7666666666666666,0.8333333333333334,0.3,0.35714285714285715,0.5,10,18,42,2
+Gradient Boosting,H14 Validation (new code),1.0,1.0,0.0,1.0,1.0,12,0,60,0
+Gradient Boosting,H14 Test (new code),1.0,1.0,0.0,1.0,1.0,12,0,60,0
+Soft Voting Ensemble,H14 Validation (new code),1.0,1.0,0.0,1.0,1.0,12,0,60,0
+Soft Voting Ensemble,H14 Test (new code),0.9583333333333333,0.9166666666666666,0.0,1.0,0.9565217391304348,11,0,60,1

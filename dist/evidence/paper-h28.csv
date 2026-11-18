@@ -1,0 +1,4 @@
+Phase,RTT ms,TCP Goodput Mbps,ICMP Loss pct
+Stable,6.0508,9.2999,0
+Constrained,32.878,1.9001,0
+Recovery,6.2758,9.2628,0

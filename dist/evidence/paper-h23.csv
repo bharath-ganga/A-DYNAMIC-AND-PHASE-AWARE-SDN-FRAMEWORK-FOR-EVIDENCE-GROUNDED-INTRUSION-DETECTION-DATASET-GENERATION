@@ -1,0 +1,6 @@
+Model,Balanced Accuracy,Recall,FPR
+Logistic Regression,0.625,0.5833,0.3333
+Random Forest,0.8875,0.875,0.1
+RBF-SVM,0.5,0.0,0.0
+Gradient Boosting,0.8958,0.7917,0.0
+Soft Voting Ensemble,0.875,0.75,0.0

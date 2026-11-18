@@ -1,0 +1,169 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.188
+Welcome to Beyond Static Traffic, a dynamic and phase-aware framework for software-defined networking research.
+
+2
+00:00:07.468 --> 00:00:12.691
+A network can slow down or change its behavior without an attack taking place.
+
+3
+00:00:12.971 --> 00:00:21.674
+This project asks how controlled experiments can turn those changes into traceable observations for intrusion detection dataset construction.
+
+4
+00:00:22.554 --> 00:00:30.637
+The framework combines Mininet, Open vSwitch, and the Ryu controller, communicating through OpenFlow version one point three.
+
+5
+00:00:30.917 --> 00:00:39.605
+Mininet creates virtual hosts and links. Open vSwitch forwards packets, while Ryu provides programmable control.
+
+6
+00:00:39.885 --> 00:00:46.808
+Line and star topologies let the experiments explore different network structures inside an isolated testbed.
+
+7
+00:00:47.688 --> 00:00:52.636
+Each experiment moves through stable, constrained, and recovery phases.
+
+8
+00:00:52.916 --> 00:01:03.709
+Stable conditions provide a reference. The constrained phase applies controlled changes to network settings. Recovery restores the reference configuration.
+
+9
+00:01:03.989 --> 00:01:12.726
+Verified phase events preserve the timing context, so a change in network conditions is not automatically labeled as malicious activity.
+
+10
+00:01:13.606 --> 00:01:19.960
+The framework describes six controlled workloads. Two represent legitimate activity.
+
+11
+00:01:20.240 --> 00:01:29.613
+B zero zero generates continuous U D P and I C M P communication. B zero one produces authorized U D P bursts.
+
+12
+00:01:29.893 --> 00:01:36.831
+These benign bursts are important: increased traffic intensity alone does not establish a malicious attack.
+
+13
+00:01:37.711 --> 00:01:43.429
+A zero one introduces bounded T C P reconnaissance across a limited port range.
+
+14
+00:01:43.709 --> 00:01:49.632
+The animation illustrates probes moving toward several service ports within the controlled testbed.
+
+15
+00:01:49.912 --> 00:01:58.900
+Generator-side logs provide evidence that traffic was generated. They do not independently establish attack success or malicious intent.
+
+16
+00:01:59.780 --> 00:02:04.104
+A zero two creates a controlled increase in U D P traffic.
+
+17
+00:02:04.384 --> 00:02:12.047
+Here, the denser packet animation represents the workload concept, not recorded experimental packet timing.
+
+18
+00:02:12.327 --> 00:02:21.704
+The dataset must keep workload execution evidence separate from network constraints, and from any claim that an attack successfully disrupted a service.
+
+19
+00:02:22.584 --> 00:02:27.863
+A zero three repeatedly establishes and tears down T C P connections.
+
+20
+00:02:28.143 --> 00:02:33.391
+Requests and responses move in both directions as connections open and close.
+
+21
+00:02:33.671 --> 00:02:42.389
+The paper reports endpoint-level verification for this scenario, while independent malicious ground-truth adjudication remains incomplete.
+
+22
+00:02:43.269 --> 00:02:48.323
+A zero four sends low-rate T C P probes toward a controlled service.
+
+23
+00:02:48.603 --> 00:02:53.821
+Unlike a large traffic burst, this workload produces sparse activity.
+
+24
+00:02:54.101 --> 00:03:05.988
+Endpoint-level verification adds execution evidence, but synthetic probing labels still do not demonstrate detection of independently verified real-world or previously unseen malicious attacks.
+
+25
+00:03:06.868 --> 00:03:18.011
+The framework collects OpenFlow flow statistics, packet and byte counters, round-trip-time samples, U D P measurements, and timestamped experiment events.
+
+26
+00:03:18.291 --> 00:03:21.830
+These sources are aligned into observation windows.
+
+27
+00:03:22.110 --> 00:03:30.428
+Run identifiers preserve the connection to each experiment, and missing measurements remain missing rather than being treated as zero traffic.
+
+28
+00:03:31.308 --> 00:03:39.051
+Phase labels describe verified network conditions. Activity labels describe recorded workload intervals.
+
+29
+00:03:39.331 --> 00:03:48.298
+A window that crosses a phase boundary is marked as a transition. Mixed activity and partial observations retain their own context.
+
+30
+00:03:48.578 --> 00:03:55.436
+This prevents operational changes or incomplete telemetry from being mistaken for evidence of malicious behavior.
+
+31
+00:03:56.316 --> 00:04:02.694
+The H fourteen dataset contains two hundred and sixteen observations across twenty columns.
+
+32
+00:04:02.974 --> 00:04:12.542
+Training, validation, and test each contain seventy-two observations from eight distinct runs, with no run identifiers shared between partitions.
+
+33
+00:04:12.822 --> 00:04:21.935
+The supplied export contains four scenario values. That dataset coverage is narrower than the framework's six described workloads.
+
+34
+00:04:22.815 --> 00:04:32.192
+H twenty-three evaluates five frozen models on one hundred and forty-four intervals from sixteen additional runs, without retraining or reselection.
+
+35
+00:04:32.472 --> 00:04:42.735
+Gradient Boosting achieved eighty-nine point five eight percent balanced accuracy. Random Forest had the highest recall, at eighty-seven point five percent.
+
+36
+00:04:43.015 --> 00:04:49.648
+These are synthetic probing results, and statistical significance between models was not established.
+
+37
+00:04:50.528 --> 00:04:56.571
+In H twenty-eight, twelve runs produced thirty-six phase-specific network conditions.
+
+38
+00:04:56.851 --> 00:05:10.233
+Mean round-trip time rose from about six point zero five milliseconds to thirty-two point eight eight under constraint. T C P bulk goodput fell from about nine point three to one point nine megabits per second.
+
+39
+00:05:10.513 --> 00:05:18.086
+Recovery measurements returned close to baseline, demonstrating a measurable response to the configured network phases.
+
+40
+00:05:18.966 --> 00:05:29.679
+The study supports controlled S D N traffic generation, traceable dataset construction, synthetic-workload evaluation, and measured network-fidelity changes.
+
+41
+00:05:29.959 --> 00:05:37.407
+It does not yet establish independently verified malicious attack detection or generalization to unseen attack families.
+
+42
+00:05:37.687 --> 00:05:46.999
+Explore the website's actual observations, original graphs, and downloadable evidence packages to trace each result back to its source.
