@@ -7,7 +7,7 @@
   function selectChapter(index){const chapter=chapters[index];if(!chapter)return;video.currentTime=chapter.start;video.play().catch(()=>{document.querySelector('#film-audio-note').textContent='Press Play on the video to start the English narration.';});}
   fetch('film-chapters.json').then(r=>{if(!r.ok)throw Error('Chapter information unavailable');return r.json();}).then(data=>{
     chapters=data.chapters;document.querySelector('#film-duration').textContent=`${clock(data.duration)} / 14 CHAPTERS / ENGLISH VOICE`;
-    document.querySelectorAll('[data-film-watch]').forEach(el=>el.textContent=`▶ Watch the narrated film · ${clock(data.duration)} ↗`);
+    document.querySelectorAll('[data-film-duration]').forEach(el=>el.textContent=clock(data.duration));
     list.replaceChildren();transcript.replaceChildren();
     chapters.forEach((chapter,index)=>{
       const button=document.createElement('button');button.className='film-chapter';button.type='button';button.setAttribute('aria-label',`Play chapter ${index+1}: ${chapter.title}`);
