@@ -2,9 +2,9 @@
 
 Interactive website for **Beyond Static Traffic: A Dynamic and Phase-Aware SDN Framework for Evidence-Grounded Intrusion Detection Dataset Generation**.
 
-[Open the hosted website](https://beyond-static-traffic-sdn.bharathganga7.chatgpt.site/)
+[Open the live website](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/)
 
-The hosted Site currently has private access. This repository contains the website source, research paper, dataset exports, original graphs, and narrated video. It does not contain the Mininet/Ryu experiment execution implementation.
+The website is publicly deployed on Cloudflare Pages. This repository contains the website source, research paper, dataset exports, original graphs, and narrated video. It does not contain the Mininet/Ryu experiment execution implementation.
 
 ## Run locally
 
