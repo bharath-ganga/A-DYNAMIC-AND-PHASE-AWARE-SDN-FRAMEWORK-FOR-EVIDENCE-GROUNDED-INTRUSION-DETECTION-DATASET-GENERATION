@@ -18,6 +18,8 @@ Open **http://127.0.0.1:4173/**. This preview server supports HTTP byte ranges s
 
 ## Features
 
+- Separate [How it works](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#explainer) tab: animated six-stage experiment workflow, problem statement, tools, reproduction requirements, objectives, and limitations.
+- Interactive teaching animations for Logistic Regression, Random Forest, RBF-SVM, Gradient Boosting, and Soft Voting, with adjustable illustrative input and the actual H23 metrics displayed separately.
 - Interactive network illustration with six workload controls, node inspection, star/line topology switching, guided walkthrough, and snapshot export.
 - Large stable/constrained/recovery controls synchronized with the paper's H28 phase means.
 - Separate views for results, dataset exploration, graph library, downloads, methodology, workload evidence, and paper access.
