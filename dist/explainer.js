@@ -33,7 +33,20 @@
  function box(c,x,y,w,h,label,active=false){c.fillStyle=active?'#deded7':'#252525';c.strokeStyle=active?'#fff':'#666';c.lineWidth=1;c.fillRect(x-w/2,y-h/2,w,h);c.strokeRect(x-w/2,y-h/2,w,h);text(c,x,y+5,label,16,active?'#111':'#ccc');}
  function line(c,a,b,t,active=true){c.strokeStyle=active?'#888':'#444';c.lineWidth=1;c.beginPath();c.moveTo(...a);c.lineTo(...b);c.stroke();if(active){const u=(t*.4)%1,x=a[0]+(b[0]-a[0])*u,y=a[1]+(b[1]-a[1])*u;c.fillStyle='#eee';c.fillRect(x-3,y-3,6,6);}}
  function workflow(){if(!wf.ready)return;const c=wf.ctx;clear(c);const t=time/1000,labels=['CONFIGURE','GENERATE','PHASES','OBSERVE','VALIDATE','EVALUATE'];text(c,35,30,`AN EXPERIMENT / STEP ${step+1} OF 6`,wf.mobile?21:13,'#888','left');
- if(step===0){line(c,[500,90],[270,205],t);line(c,[500,90],[730,205],t+.8);box(c,500,90,190,45,'RYU / CONTROL',true);box(c,270,205,200,55,'OPEN VSWITCH');box(c,730,205,200,55,'OPEN VSWITCH');for(const x of [150,390,610,850]){line(c,[x<500?270:730,235],[x,285],t);box(c,x,290,130,36,'HOST');}}
+ if(step===0){
+ // Dashed controller channels are distinct from solid packet-forwarding links.
+ c.setLineDash([6,5]);line(c,[500,100],[270,175],t);line(c,[500,100],[730,175],t+.8);c.setLineDash([]);
+ line(c,[370,205],[630,205],t);text(c,500,191,'DATA LINK',13,'#aaa');
+ box(c,500,77,225,46,'RYU CONTROLLER',true);
+ text(c,500,129,'OpenFlow 1.3 / control channels',14,'#aaa');
+ for(const [x,id] of [[270,'S1'],[730,'S2']]){
+ c.fillStyle='#303030';c.strokeStyle='#ddd';c.lineWidth=2;c.fillRect(x-105,175,210,76);c.strokeRect(x-105,175,210,76);
+ text(c,x,197,'SWITCH '+id,18,'#fff');text(c,x,217,'Open vSwitch',14,'#ccc');
+ for(let port=0;port<8;port++){const px=x-83+port*23;c.fillStyle='#111';c.fillRect(px,227,17,12);c.strokeStyle='#888';c.lineWidth=1;c.strokeRect(px,227,17,12);c.fillStyle=(Math.floor(t*3)+port)%4===0?'#eee':'#777';c.fillRect(px+5,242,7,3);}
+ }
+ for(const [i,x] of [150,390,610,850].entries()){line(c,[x<500?270:730,251],[x,279],t+i);box(c,x,298,135,38,'HOST H'+(i+1));}
+ text(c,35,327,'ILLUSTRATIVE TOPOLOGY / VIRTUAL SWITCHES IN MININET',12,'#999','left');
+ }
  if(step===1){const workload=Math.floor(t/2)%6;for(let i=0;i<6;i++){const x=95+i*162;box(c,x,110,140,45,['B00','B01','A01','A02','A03','A04'][i],i===workload);line(c,[x,133],[500,235],t+i,i===workload);}box(c,500,255,360,65,'CONTROLLED TRAFFIC',true);text(c,500,325,'WORKLOAD EXECUTION EVIDENCE ≠ ATTACK SUCCESS',wf.mobile?21:15,'#aaa');}
  if(step===2){const p=Math.floor(t/2.4)%3;for(let i=0;i<3;i++){const x=180+i*320;box(c,x,155,255,80,['STABLE','CONSTRAINED','RECOVERY'][i],i===p);text(c,x,230,['Reference settings','Applied constraints','Reference restored'][i],wf.mobile?24:18);}line(c,[180,275],[820,275],t);text(c,500,320,'VERIFY THE PHASE BOUNDARIES',wf.mobile?22:15,'#aaa');}
  if(step===3){['Flow counters','RTT samples','UDP logs','Event timestamps'].forEach((s,i)=>{box(c,200,75+i*65,240,40,s,i===Math.floor(t)%4);line(c,[320,75+i*65],[690,180],t+i);});box(c,800,180,260,90,'OBSERVATION');text(c,800,260,'features + run_id + time',wf.mobile?23:17,'#aaa');}
