@@ -73,3 +73,12 @@ Animations illustrate concepts; they do not represent a live SDN connection or e
 ## Authors
 
 Dr. S. Bharath Bhushan, Ganga Bharath, Pathepur Dikshith, Badveli Guru Pala Nivesh Reddy, and Chitteti Durga Sai.
+
+## Complete supplied result folders
+
+The original directory exports are also available under [research-artifacts](research-artifacts/README.md):
+
+- [FINAL RESULTS](research-artifacts/FINAL%20RESULTS/), including the guide package and the additional LSTM/GRU/Random Forest result files and model artifacts.
+- [D05_FINAL_DATASET_EXPORT_v1](research-artifacts/D05_FINAL_DATASET_EXPORT_v1/), including the H14 splits, supporting datasets, audits, and reports.
+
+All 174 supplied files are preserved byte-for-byte, with a [SHA-256 manifest](research-artifacts/SHA256SUMS.txt). These additional artifacts remain separate from the paper's reported evaluation and do not automatically alter the website's results.

@@ -1,0 +1,48 @@
+{
+  "package": "D05_FINAL_DATASET_EXPORT_v1",
+  "created_utc": "2026-11-17T10:12:43.278324+00:00",
+  "dataset_design": "One primary H14 ML dataset; separate supporting experimental datasets",
+  "primary_source": "/home/nmr/new/D05_H14_validated_v1/interval_dataset.csv",
+  "primary_source_sha256": "a8027965eb8df973ddbdf8ed8eec375eb6965f408220c3c754e1a625919d6c7c",
+  "primary_rows": 216,
+  "primary_columns": 20,
+  "primary_columns_list": [
+    "run_id",
+    "split",
+    "seed",
+    "scenario",
+    "topology",
+    "phase",
+    "interval",
+    "label_synthetic_probe",
+    "label_scope",
+    "flow_count_mean",
+    "cumulative_flow_packets_change",
+    "cumulative_flow_bytes_change",
+    "rtt_mean_ms",
+    "rtt_min_ms",
+    "rtt_max_ms",
+    "rtt_std_ms",
+    "ping_loss_pct",
+    "interval_seconds",
+    "verified_received_bytes",
+    "measured_delivery_mbps"
+  ],
+  "split_column": "split",
+  "split_counts": {
+    "test": 72,
+    "train": 72,
+    "validation": 72
+  },
+  "run_level_leakage_check": "PASS_NO_RUN_ID_OVERLAP",
+  "other_h14_candidates": [
+    "/home/nmr/new/D05_H14_validated_v1/interval_dataset.csv"
+  ],
+  "supporting_files_copied": 26,
+  "scientific_limitations": [
+    "Main H14 labels reflect the source protocol",
+    "Do not equate synthetic workload labels with independently verified malicious attacks",
+    "H26 independent human review remains pending",
+    "Different experiment protocols are not automatically pooled into one ML dataset"
+  ]
+}

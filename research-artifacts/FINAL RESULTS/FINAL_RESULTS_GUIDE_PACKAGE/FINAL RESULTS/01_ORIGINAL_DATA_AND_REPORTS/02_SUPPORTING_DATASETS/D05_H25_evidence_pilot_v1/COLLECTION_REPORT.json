@@ -1,0 +1,44 @@
+{
+  "stage": "H25",
+  "status": "PASS_SCOPED_COLLECTION",
+  "runs": [
+    {
+      "run_id": "H25_normal_application_line_seed6101",
+      "mode": "normal_application",
+      "topology": "line",
+      "seed": 6101,
+      "issues": [],
+      "technical_collection_pass": true,
+      "attack_ground_truth_reviewed": false
+    },
+    {
+      "run_id": "H25_authorized_udp_burst_line_seed6101",
+      "mode": "authorized_udp_burst",
+      "topology": "line",
+      "seed": 6101,
+      "issues": [],
+      "technical_collection_pass": true,
+      "attack_ground_truth_reviewed": false
+    },
+    {
+      "run_id": "H25_controlled_tcp_reconnaissance_line_seed6101",
+      "mode": "controlled_tcp_reconnaissance",
+      "topology": "line",
+      "seed": 6101,
+      "issues": [],
+      "technical_collection_pass": true,
+      "attack_ground_truth_reviewed": false
+    },
+    {
+      "run_id": "H25_unseen_application_request_burst_line_seed6101",
+      "mode": "unseen_application_request_burst",
+      "topology": "line",
+      "seed": 6101,
+      "issues": [],
+      "technical_collection_pass": true,
+      "attack_ground_truth_reviewed": false
+    }
+  ],
+  "malicious_ground_truth_verified": false,
+  "unseen_family_generalization_verified": false
+}

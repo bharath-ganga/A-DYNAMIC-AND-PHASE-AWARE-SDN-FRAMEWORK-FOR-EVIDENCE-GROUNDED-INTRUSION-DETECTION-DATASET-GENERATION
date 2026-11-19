@@ -1,0 +1,4 @@
+split,interval_rows,unique_runs,label_0,label_1
+train,72,8,60,12
+validation,72,8,60,12
+test,72,8,60,12

@@ -1,0 +1,67 @@
+{
+  "stage": "FINAL-STEP-1",
+  "status": "PASS_SCOPED_FREEZE_AND_SPLIT_AUDIT",
+  "generated_utc": "2026-11-17T10:08:58.315446+00:00",
+  "dataset_source": "/home/nmr/new/D05_H14_validated_v1/interval_dataset.csv",
+  "dataset_sha256": "a8027965eb8df973ddbdf8ed8eec375eb6965f408220c3c754e1a625919d6c7c",
+  "dataset_rows": 216,
+  "dataset_columns": 20,
+  "synthetic_label": "label_synthetic_probe",
+  "dataset_label_is_malicious_ground_truth": false,
+  "split_summary": [
+    {
+      "split": "train",
+      "interval_rows": 72,
+      "unique_runs": 8,
+      "label_0": 60,
+      "label_1": 12
+    },
+    {
+      "split": "validation",
+      "interval_rows": 72,
+      "unique_runs": 8,
+      "label_0": 60,
+      "label_1": 12
+    },
+    {
+      "split": "test",
+      "interval_rows": 72,
+      "unique_runs": 8,
+      "label_0": 60,
+      "label_1": 12
+    }
+  ],
+  "run_id_disjoint_splits": true,
+  "frozen_model_source": "/home/nmr/new/D05_H22B_four_models_ensemble_v1/models_frozen_for_future.joblib",
+  "frozen_model_sha256": "24e9cd2ddab2746f46d0429e8659641772e790d2c43378297ef441d7138dff2d",
+  "model_selected_on_validation": "NOT_RECORDED_IN_REPORT",
+  "corroborated_model_hash_report_keys": {
+    "H22B": [
+      "model_sha256"
+    ],
+    "H23": [
+      "model_sha256"
+    ]
+  },
+  "corroborated_h14_dataset_hash_report_keys": [],
+  "h23_run_ids_disjoint_from_h14": true,
+  "h23_intervals": 144,
+  "h23_new_runs": 16,
+  "h28_phase_conditions": 36,
+  "h28_run_count": 12,
+  "source_statuses": {
+    "H14": "PASS_SCOPED_DATASET",
+    "H15": "PASS_EXPLORATORY_HELDOUT_EVALUATION",
+    "H22B": "PASS_SCOPED_FOUR_MODEL_ENSEMBLE_COMPARISON",
+    "H23": "PASS_SCOPED_PROSPECTIVE_FROZEN_MODEL_COMPARISON",
+    "H25": "NO_REPORT",
+    "H27": "PASS_SCOPED_EVIDENCE_RECONCILIATION",
+    "H28": "PASS_SCOPED_EVIDENCE_RECONCILIATION"
+  },
+  "limitations": [
+    "Dataset observations are correlated by run",
+    "Existing H14 labels describe synthetic probing, not malicious attacks",
+    "Previous H15 test is not newly held out",
+    "H23 prospective conditions reuse existing workload families"
+  ]
+}

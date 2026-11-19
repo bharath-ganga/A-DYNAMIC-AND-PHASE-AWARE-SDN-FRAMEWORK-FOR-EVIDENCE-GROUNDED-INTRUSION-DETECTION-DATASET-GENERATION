@@ -1,0 +1,53 @@
+{
+  "stage": "D05-H18-evaluation",
+  "status": "PASS_SCOPED_FROZEN_MODEL_NEW_SEED_REPLICATION",
+  "model": "Original H15 random_forest configuration re-fitted on original H14 TRAIN ONLY",
+  "model_selected_using_replication": false,
+  "original_test_used_for_training": false,
+  "new_seeds": [
+    4101,
+    4102
+  ],
+  "n_runs": 16,
+  "n_intervals": 144,
+  "TN": 106,
+  "FP": 14,
+  "FN": 2,
+  "TP": 22,
+  "balanced_accuracy": 0.8999999999999999,
+  "false_positive_rate": 0.11666666666666667,
+  "recall": 0.9166666666666666,
+  "roc_auc": 0.9458333333333332,
+  "average_precision": 0.9266427924850058,
+  "original_H15_heldout_balanced_accuracy": 0.8666666666666667,
+  "per_seed": [
+    {
+      "seed": 4101,
+      "n": 72,
+      "TN": 53,
+      "FP": 7,
+      "FN": 1,
+      "TP": 11,
+      "balanced_accuracy": 0.9,
+      "false_positive_rate": 0.116667
+    },
+    {
+      "seed": 4102,
+      "n": 72,
+      "TN": 53,
+      "FP": 7,
+      "FN": 1,
+      "TP": 11,
+      "balanced_accuracy": 0.9,
+      "false_positive_rate": 0.116667
+    }
+  ],
+  "limitations": [
+    "Synthetic probing versus authorized activity, not verified attacks",
+    "Only two new seed groups; intervals within runs are correlated",
+    "New seeds reuse the same scenario types and two topologies",
+    "Topology generalization is not independently established",
+    "No claims of emerging cyberattack detection",
+    "Retained H15 model configuration but refit original train data (model artifact was not serialized)"
+  ]
+}

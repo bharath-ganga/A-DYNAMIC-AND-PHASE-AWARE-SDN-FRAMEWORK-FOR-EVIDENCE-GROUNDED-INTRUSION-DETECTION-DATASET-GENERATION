@@ -1,0 +1,4 @@
+phase,run_conditions,configured_bw_mbps,configured_delay,configured_loss_percent,mean_3_ping_rtt_ms_across_runs,mean_ping_loss_pct_across_runs,application_messages_sent,application_messages_received,application_delivery_fraction,total_payload_bytes_received,controller_connected_conditions,complete_flow_snapshot_conditions
+stable,4,10,5ms,0,28.9215,0.0,129,129,1.0,8257,4,4
+constrained,4,2,30ms,1,32.5855,0.0,129,127,0.984496,8770,4,4
+recovery,4,10,5ms,0,5.7725,0.0,129,129,1.0,8515,4,4

@@ -1,0 +1,58 @@
+
+SDN CAPSTONE - FINAL RESULTS FOR GUIDE
+======================================
+
+01_ORIGINAL_DATA_AND_REPORTS
+All original research CSVs, JSON reports, audits, and figures.
+
+02_NEW_H14_MODEL_RESULTS
+Newly computed H14 machine-learning metrics, feature
+importance values, confusion matrices and dataset analysis.
+
+03_GRAPHS_PNG
+Presentation-ready graphs.
+
+04_PAPER_REFERENCE_TABLES
+Reported H23 and H28 paper results.
+
+PROJECT:
+Dynamic and Phase-Aware SDN Dataset Generation
+
+MAIN TOOLS:
+Mininet, Ryu, Open vSwitch, OpenFlow 1.3
+
+ML MODELS:
+1. Logistic Regression
+2. Random Forest
+3. RBF-SVM
+4. Gradient Boosting
+5. Soft Voting Ensemble
+
+DATASET:
+H14: 216 observations
+Training: 72
+Validation: 72
+Testing: 72
+
+Label 0 = not synthetic probing
+Label 1 = synthetic probing
+
+PAPER H23 RESULTS:
+Gradient Boosting balanced accuracy: 89.58%
+Random Forest recall: 87.50%
+
+PAPER H28 RESULTS:
+Stable RTT: 6.05 ms
+Constrained RTT: 32.88 ms
+Recovery RTT: 6.28 ms
+
+Stable TCP goodput: 9.30 Mbps
+Constrained TCP goodput: 1.90 Mbps
+Recovery TCP goodput: 9.26 Mbps
+
+IMPORTANT:
+New H14 model scores are from the newly trained Colab models.
+They are not the original H23 frozen-model results.
+
+The paper evaluates controlled synthetic probing activity,
+not independently verified real-world malicious attacks.

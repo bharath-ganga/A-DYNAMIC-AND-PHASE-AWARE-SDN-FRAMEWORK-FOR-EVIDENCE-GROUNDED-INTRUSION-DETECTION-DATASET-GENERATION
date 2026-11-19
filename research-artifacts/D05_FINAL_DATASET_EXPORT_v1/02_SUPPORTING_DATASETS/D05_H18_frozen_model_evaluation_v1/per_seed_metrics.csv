@@ -1,0 +1,3 @@
+seed,n,TN,FP,FN,TP,balanced_accuracy,false_positive_rate
+4101,72,53,7,1,11,0.9,0.116667
+4102,72,53,7,1,11,0.9,0.116667

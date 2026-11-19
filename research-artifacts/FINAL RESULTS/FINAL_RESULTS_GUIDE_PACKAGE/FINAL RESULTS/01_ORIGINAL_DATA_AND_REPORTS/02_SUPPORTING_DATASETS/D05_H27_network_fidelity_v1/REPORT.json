@@ -1,0 +1,20 @@
+{
+  "stage": "D05-H27",
+  "status": "PASS_SCOPED_EVIDENCE_RECONCILIATION",
+  "created_utc": "2026-11-17T07:49:46.861033+00:00",
+  "verified_input_inventory_files": 160,
+  "runs": 4,
+  "phase_conditions": 12,
+  "issues": [],
+  "rtt_observation": "Each RTT is a 3-probe ICMP ping average; no confidence intervals or calibrated network guarantee",
+  "loss_observation": "Ping loss uses only 3 ICMP probes; configured loss is not proof of achieved loss",
+  "goodput_observation": "Received JSON application payload bytes divided by sender-on duration; NOT link throughput or capacity",
+  "flow_observation": "Counters summed across different flow rules and switches; differences are descriptive, NOT unique packet counts",
+  "measurement_scope": "One line topology, seed6101, four workloads, three phases; configured TC on h1 interface",
+  "phase_fidelity_fully_validated": false,
+  "human_ground_truth_review_complete": false,
+  "malicious_attack_ground_truth_verified": false,
+  "unseen_attack_generalization_verified": false,
+  "objective_fully_satisfied": false,
+  "recommended_followup": "Increase independent seeds and topology coverage; verify TC qdisc runtime values, measure sustained throughput and repeated RTT/loss before claiming fidelity."
+}

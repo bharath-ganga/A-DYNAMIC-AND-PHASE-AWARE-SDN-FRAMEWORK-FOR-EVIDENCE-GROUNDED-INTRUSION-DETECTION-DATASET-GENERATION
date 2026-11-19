@@ -1,0 +1,12 @@
+source,path,exists,manifest_validated_files,manifest_status
+H14,/home/nmr/new/D05_H14_validated_v1,True,3,PASS_TRACKED_FILES
+H15,/home/nmr/new/D05_H15_validated_v1,True,2,PASS_TRACKED_FILES
+H19,/home/nmr/new/D05_H19_ground_truth_audit_v1,True,8,PASS_TRACKED_FILES
+H20,/home/nmr/new/D05_H20_new_attack_evidence_v1,True,,NO_TOP_LEVEL_MANIFEST
+H22B,/home/nmr/new/D05_H22B_four_models_ensemble_v1,True,5,PASS_TRACKED_FILES
+H23,/home/nmr/new/D05_H23_model_comparison_v1,True,4,PASS_TRACKED_FILES
+H25,/home/nmr/new/D05_H25_evidence_pilot_v1,True,1,PASS_TRACKED_FILES
+H26_PACKAGE,/home/nmr/new/D05_H26_review_package_v1,True,4,PASS_TRACKED_FILES
+H26_REVIEWS,/home/nmr/new/D05_H26_reviewer_submissions_v1,True,,NO_TOP_LEVEL_MANIFEST
+H27,/home/nmr/new/D05_H27_network_fidelity_v1,True,3,PASS_TRACKED_FILES
+H28,/home/nmr/new/D05_H28_fidelity_audit_v1,True,2,PASS_TRACKED_FILES

@@ -1,0 +1,12 @@
+,Importance
+measured_delivery_mbps,0.46089120889073143
+verified_received_bytes,0.37076364628474096
+cumulative_flow_packets_change,0.11863663697330891
+cumulative_flow_bytes_change,0.04120075076182635
+interval_seconds,0.008507757089392146
+rtt_max_ms,1.6556750674620278e-16
+flow_count_mean,4.615738880506804e-17
+rtt_std_ms,0.0
+rtt_min_ms,0.0
+rtt_mean_ms,0.0
+ping_loss_pct,0.0

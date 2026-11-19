@@ -1,0 +1,32 @@
+{
+  "stage": "D05-H18-collection",
+  "status": "PASS_COLLECTION_PENDING_INDEPENDENT_AUDIT",
+  "source_script_sha256": "af1bea38c95ed7c8a349d4742206e7027b393c16407fe1d32d33182651cb9e0a",
+  "new_seeds": [
+    4101,
+    4102
+  ],
+  "runs_completed": 16,
+  "planned_runs": 16,
+  "run_ids": [
+    "H18_idle_line_seed4101",
+    "H18_idle_star_seed4101",
+    "H18_udp_burst_line_seed4101",
+    "H18_udp_burst_star_seed4101",
+    "H18_tcp_probe_line_seed4101",
+    "H18_tcp_probe_star_seed4101",
+    "H18_lowrate_tcp_line_seed4101",
+    "H18_lowrate_tcp_star_seed4101",
+    "H18_idle_line_seed4102",
+    "H18_idle_star_seed4102",
+    "H18_udp_burst_line_seed4102",
+    "H18_udp_burst_star_seed4102",
+    "H18_tcp_probe_line_seed4102",
+    "H18_tcp_probe_star_seed4102",
+    "H18_lowrate_tcp_line_seed4102",
+    "H18_lowrate_tcp_star_seed4102"
+  ],
+  "issues": [],
+  "ground_truth": "AUTHORIZED_SYNTHETIC_WORKLOAD_ONLY",
+  "created_utc": "2026-11-16T10:54:24.107682+00:00"
+}

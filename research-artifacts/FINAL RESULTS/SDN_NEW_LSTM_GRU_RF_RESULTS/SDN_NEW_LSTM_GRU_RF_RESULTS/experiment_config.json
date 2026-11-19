@@ -1,0 +1,43 @@
+{
+  "provenance": "NEW experimental code, not reported in uploaded final paper",
+  "target": "label_synthetic_probe",
+  "positive_class": "controlled synthetic probing (not verified malicious attack)",
+  "run_id_column": "run_id",
+  "timestamp_column": null,
+  "timestamp_warning": true,
+  "sequence_length": 3,
+  "number_of_features": 10,
+  "features": [
+    "flow_count_mean",
+    "cumulative_flow_packets_change",
+    "cumulative_flow_bytes_change",
+    "rtt_mean_ms",
+    "rtt_min_ms",
+    "rtt_max_ms",
+    "rtt_std_ms",
+    "ping_loss_pct",
+    "interval_seconds",
+    "measured_delivery_mbps"
+  ],
+  "model_definitions": {
+    "LSTM": "1 layer, hidden=32",
+    "GRU": "1 layer, hidden=32",
+    "Lightweight GRU": "1 layer, hidden=8",
+    "Random Forest": "200 trees, class-balanced"
+  },
+  "training": {
+    "max_epochs": 35,
+    "patience": 7,
+    "batch_size": 16,
+    "early_stopping": "validation loss",
+    "class_imbalance": "positive-class loss weighting"
+  },
+  "limits": [
+    "H14 has only 72 train rows, very small for deep learning",
+    "Overlapping windows within one run are correlated",
+    "Separate validation and test by original H14 run-disjoint splits",
+    "H23 frozen-model results in paper are NOT reproduced by this experiment",
+    "No real-world attack verification",
+    "Model size/latency require formal benchmark for strong efficiency claims"
+  ]
+}

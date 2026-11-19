@@ -1,0 +1,4 @@
+phase,conditions,mean_rtt_ms,mean_ping_loss_pct,mean_bulk_goodput_mbps
+stable,12,6.0508,0.0,9.2999
+constrained,12,32.878,0.0,1.9001
+recovery,12,6.2758,0.0,9.2628

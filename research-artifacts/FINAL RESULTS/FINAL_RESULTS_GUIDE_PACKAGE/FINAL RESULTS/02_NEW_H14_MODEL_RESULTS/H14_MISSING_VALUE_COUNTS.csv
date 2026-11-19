@@ -1,0 +1,21 @@
+,Missing values
+run_id,0
+split,0
+seed,0
+scenario,0
+topology,0
+phase,0
+interval,0
+label_synthetic_probe,0
+label_scope,0
+flow_count_mean,0
+cumulative_flow_packets_change,0
+cumulative_flow_bytes_change,0
+rtt_mean_ms,0
+rtt_min_ms,0
+rtt_max_ms,0
+rtt_std_ms,0
+ping_loss_pct,0
+interval_seconds,0
+verified_received_bytes,0
+measured_delivery_mbps,0

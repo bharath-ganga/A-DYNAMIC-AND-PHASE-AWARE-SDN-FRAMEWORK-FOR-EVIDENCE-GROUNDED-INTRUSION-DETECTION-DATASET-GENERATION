@@ -7,3 +7,6 @@ dist/evidence/** -text
 *.png -text
 *.jpg -text
 *.zip -text
+
+# Preserve the complete supplied research folders, including CSVs and model files.
+research-artifacts/** -text

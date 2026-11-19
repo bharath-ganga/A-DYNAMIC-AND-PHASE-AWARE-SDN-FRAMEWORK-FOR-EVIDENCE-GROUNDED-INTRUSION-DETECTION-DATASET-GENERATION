@@ -1,0 +1,9 @@
+{
+  "stage": "D05-H18-audit",
+  "status": "PASS_SCOPED_INDEPENDENT_REPLICATION_AUDIT",
+  "audited_runs": 16,
+  "issues": [],
+  "malicious_ground_truth_verified": false,
+  "global_generator_silence_proven": false,
+  "network_fidelity_independently_proven": false
+}

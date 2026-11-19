@@ -1,0 +1,23 @@
+{
+  "stage": "FINAL-STEP-3",
+  "status": "TECHNICAL_RESEARCH_PACKAGE_COMPLETE_WITH_OPEN_SCIENTIFIC_LIMITATIONS",
+  "generated_utc": "2026-11-17T10:08:58.342266+00:00",
+  "H14_rows": 216,
+  "H23_intervals": 144,
+  "H28_phase_conditions": 36,
+  "original_validation_winner": "NOT_RECORDED_IN_REPORT",
+  "frozen_model_sha256": "24e9cd2ddab2746f46d0429e8659641772e790d2c43378297ef441d7138dff2d",
+  "h26_human_review_complete": false,
+  "verified_malicious_ground_truth": false,
+  "verified_unseen_malicious_attack_family_generalization": false,
+  "original_full_objective_satisfied": false,
+  "source_H27_status": "PASS_SCOPED_EVIDENCE_RECONCILIATION",
+  "source_H28_status": "PASS_SCOPED_EVIDENCE_RECONCILIATION",
+  "files": [
+    "FINAL_RESEARCH_REPORT.md",
+    "TABLE_1_FROZEN_MODEL_PROSPECTIVE.csv",
+    "TABLE_2_NETWORK_FIDELITY.csv",
+    "FIGURE_1_RTT.svg",
+    "FIGURE_2_GOODPUT.svg"
+  ]
+}

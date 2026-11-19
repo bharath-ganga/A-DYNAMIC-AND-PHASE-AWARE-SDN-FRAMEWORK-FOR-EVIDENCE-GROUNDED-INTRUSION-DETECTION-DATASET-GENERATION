@@ -1,0 +1,13 @@
+run_id,scenario,topology,seed,phase,configured_bw_mbps,configured_delay,configured_loss_percent,ping_loss_percent,rtt_min_ms,rtt_mean_ms,rtt_max_ms,sender_records,receiver_records,payload_received_fraction,observed_payload_bytes,on_seconds,payload_goodput_bps,controller_connected_all,flow_snapshots_present,flow_pre_rows,flow_post_rows,flow_pre_packet_counter_sum,flow_post_packet_counter_sum,flow_counter_sum_change_descriptive,raw_pcap_present,issues
+H25_normal_application_line_seed6101,normal_application,line,6101,stable,10,5ms,0,0.0,6.524,30.073,76.7,3,3,1.0,177,0.493889,2867.04,True,8,12,12,281,401,120,True,
+H25_normal_application_line_seed6101,normal_application,line,6101,constrained,2,30ms,1,0.0,31.291,32.017,32.674,3,3,1.0,192,1.636894,938.36,True,8,12,12,445,576,131,True,
+H25_normal_application_line_seed6101,normal_application,line,6101,recovery,10,5ms,0,0.0,5.244,6.079,7.121,3,3,1.0,183,0.497622,2941.99,True,8,12,12,605,729,124,True,
+H25_authorized_udp_burst_line_seed6101,authorized_udp_burst,line,6101,stable,10,5ms,0,0.0,5.287,21.396,52.965,100,100,1.0,6190,1.184133,41819.63,True,8,12,12,272,681,409,True,
+H25_authorized_udp_burst_line_seed6101,authorized_udp_burst,line,6101,constrained,2,30ms,1,0.0,30.994,34.248,39.119,100,98,0.98,6558,1.18744,44182.44,True,8,12,12,716,1120,404,True,
+H25_authorized_udp_burst_line_seed6101,authorized_udp_burst,line,6101,recovery,10,5ms,0,0.0,5.292,5.633,6.191,100,100,1.0,6390,1.183706,43186.4,True,8,12,12,1164,1564,400,True,
+H25_controlled_tcp_reconnaissance_line_seed6101,controlled_tcp_reconnaissance,line,6101,stable,10,5ms,0,0.0,6.751,26.21,62.425,6,6,1.0,420,0.888083,3783.43,True,8,12,12,255,510,255,True,
+H25_controlled_tcp_reconnaissance_line_seed6101,controlled_tcp_reconnaissance,line,6101,constrained,2,30ms,1,0.0,30.348,31.767,34.133,6,6,1.0,450,1.241563,2899.57,True,8,12,12,546,786,240,True,
+H25_controlled_tcp_reconnaissance_line_seed6101,controlled_tcp_reconnaissance,line,6101,recovery,10,5ms,0,0.0,5.376,5.605,5.722,6,6,1.0,432,0.884644,3906.66,True,8,12,12,833,1086,253,True,
+H25_unseen_application_request_burst_line_seed6101,unseen_application_request_burst,line,6101,stable,10,5ms,0,0.0,5.294,38.007,101.606,20,20,1.0,1470,0.573433,20508.06,True,8,12,12,274,1085,811,True,
+H25_unseen_application_request_burst_line_seed6101,unseen_application_request_burst,line,6101,constrained,2,30ms,1,0.0,31.053,32.31,33.23,20,20,1.0,1570,1.643651,7641.52,True,8,12,12,1114,1935,821,True,
+H25_unseen_application_request_burst_line_seed6101,unseen_application_request_burst,line,6101,recovery,10,5ms,0,0.0,5.41,5.773,6.448,20,20,1.0,1510,0.634712,19032.25,True,8,12,12,1974,2782,808,True,

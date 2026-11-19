@@ -1,0 +1,37 @@
+{
+  "stage": "D05-H28",
+  "status": "PASS_SCOPED_EVIDENCE_RECONCILIATION",
+  "source_collection_manifest_sha256": "005bb7ec1232f9f6101ca7822d151124a32af960224114ac7a0991350ce2a598",
+  "run_count": 12,
+  "phase_conditions": 36,
+  "issues": [],
+  "phase_summary": {
+    "stable": {
+      "conditions": 12,
+      "mean_rtt_ms": 6.0508,
+      "mean_ping_loss_pct": 0.0,
+      "mean_bulk_goodput_mbps": 9.2999
+    },
+    "constrained": {
+      "conditions": 12,
+      "mean_rtt_ms": 32.878,
+      "mean_ping_loss_pct": 0.0,
+      "mean_bulk_goodput_mbps": 1.9001
+    },
+    "recovery": {
+      "conditions": 12,
+      "mean_rtt_ms": 6.2758,
+      "mean_ping_loss_pct": 0.0,
+      "mean_bulk_goodput_mbps": 9.2628
+    }
+  },
+  "limitations": [
+    "A technical evidence audit cannot establish precise achieved shaping from qdisc text alone",
+    "TCP application goodput is not guaranteed link capacity",
+    "20 ICMP probes per condition are limited for estimating a configured 1 percent loss",
+    "Only two seeds and two topologies; no malicious labels established"
+  ],
+  "full_phase_fidelity_verified": false,
+  "malicious_ground_truth_verified": false,
+  "human_ground_truth_review_complete": false
+}
