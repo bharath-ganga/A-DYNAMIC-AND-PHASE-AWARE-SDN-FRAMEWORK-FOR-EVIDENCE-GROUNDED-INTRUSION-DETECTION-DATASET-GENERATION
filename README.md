@@ -18,6 +18,7 @@ Open **http://127.0.0.1:4173/**. This preview server supports HTTP byte ranges s
 
 ## Features
 
+- Beginner-friendly SDN architecture story: a 60-second, six-scene animation with large moving packet envelopes, separate controller-request and rule messages, a flow-table check, direct switch forwarding, plain-English captions, chapter controls, pause/replay, and optional browser English read-aloud. The technical diagram remains expandable below.
 - [SDN Architecture](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#architecture): a six-step animated teaching walkthrough of application intent, a reactive OpenFlow exchange, rule installation, direct switch forwarding, and later telemetry/evaluation. Includes layer explanations, presenter wording, playback controls, and a labeled illustrative flow rule.
 - [Evidence lab](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#evidence): animated stable/constrained/recovery sequence synchronized with reported H28 phase means, clickable comparison bars, a selector for all 24 actual H14 runs, and a claim-to-source explorer with original graphs, CSVs, paper references, and scientific limits. H28 aggregate measurements remain separate from the H14 run records.
 - Separate [How it works](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#explainer) tab: animated six-stage experiment workflow, problem statement, tools, reproduction requirements, objectives, and limitations.
