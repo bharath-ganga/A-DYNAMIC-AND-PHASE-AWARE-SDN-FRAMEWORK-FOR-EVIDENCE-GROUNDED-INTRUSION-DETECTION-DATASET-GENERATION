@@ -1,6 +1,6 @@
 (() => {
   const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
-  const labels={evidence:'Evidence lab',explainer:'How it works',home:'Network lab',lab:'Phase measurements',results:'Reported findings',dataset:'Dataset explorer',gallery:'Graph library',downloads:'Research downloads',research:'The paper',framework:'Framework & methodology',workloads:'Workload evidence',cinema:'Traffic cinema'};
+  const labels={architecture:'SDN Architecture',evidence:'Evidence lab',explainer:'How it works',home:'Network lab',lab:'Phase measurements',results:'Reported findings',dataset:'Dataset explorer',gallery:'Graph library',downloads:'Research downloads',research:'The paper',framework:'Framework & methodology',workloads:'Workload evidence',cinema:'Traffic cinema'};
   const routes=[...document.querySelectorAll('main>section')];
   document.documentElement.classList.add('route-ready');
   const bar=document.createElement('div');bar.className='route-bar';bar.innerHTML='<a href="#home">← Back to the network lab</a><span id="route-name"></span><a href="#downloads">All downloads ↓</a>';q('main').before(bar);

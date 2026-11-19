@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('dist/index.html');s=p.read_text(encoding='utf-8');s=s.replace('</head>','<link rel="stylesheet" href="architecture.css"><script src="architecture.js" defer></script></head>');s=s.replace('<a href="#explainer">How it works</a>','<a href="#explainer">How it works</a><a href="#architecture">Architecture</a>',1);s=s.replace('</main>',Path('architecture-section.html').read_text(encoding='utf-8')+'</main>');p.write_text(s,encoding='utf-8')
+p=Path('dist/workspace.js');s=p.read_text(encoding='utf-8').replace("const labels={evidence:","const labels={architecture:'SDN Architecture',evidence:");p.write_text(s,encoding='utf-8')

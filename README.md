@@ -18,6 +18,7 @@ Open **http://127.0.0.1:4173/**. This preview server supports HTTP byte ranges s
 
 ## Features
 
+- [SDN Architecture](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#architecture): a six-step animated teaching walkthrough of application intent, a reactive OpenFlow exchange, rule installation, direct switch forwarding, and later telemetry/evaluation. Includes layer explanations, presenter wording, playback controls, and a labeled illustrative flow rule.
 - [Evidence lab](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#evidence): animated stable/constrained/recovery sequence synchronized with reported H28 phase means, clickable comparison bars, a selector for all 24 actual H14 runs, and a claim-to-source explorer with original graphs, CSVs, paper references, and scientific limits. H28 aggregate measurements remain separate from the H14 run records.
 - Separate [How it works](https://a-dynamic-and-phase-aware-sdn-framework-for-evidence-groun.pages.dev/#explainer) tab: animated six-stage experiment workflow, problem statement, tools, reproduction requirements, objectives, and limitations.
 - Interactive teaching animations for Logistic Regression, Random Forest, RBF-SVM, Gradient Boosting, and Soft Voting, with adjustable illustrative input and the actual H23 metrics displayed separately.
